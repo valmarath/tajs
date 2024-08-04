@@ -1,0 +1,24 @@
+{
+  "name": "aula01-tdd",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mpde --watch src/index.js",
+    "test": "npx cucumber-js",
+    "test:dev": "node --watch node_modules/@cucumber/cucumber/bin/cucumber.js --fail-fast --format progress --format html:cucumber-report.html",
+    "test:debug": "node --watch --inspect-brk node_modules/@cucumber/cucumber/bin/cucumber.js --fail-fast --format progress --format html:cucumber-report.html"
+  },
+  "keywords": [],
+  "author": "valmarath",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": "v20.12.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.1",
+    "cross-env": "^7.0.3",
+    "sinon": "^17.0.1"
+  }
+}
